@@ -16,7 +16,7 @@ function parent() {
 
 отменяется отправка формы при нажатии на кнопку
 
-const MyForm = () => {
+```const MyForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   }
@@ -25,4 +25,4 @@ const MyForm = () => {
       <button type="submit">Submit</button>
     </form>
   );
-}
+}```
