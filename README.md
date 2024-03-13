@@ -6,10 +6,10 @@
 
 Чтобы избавиться от переменной that нужно использовать стрелочную функцию 
 
-```function parent() {
+function parent() {
     const multiplier = 3;
     return [33, 77, 99, 81, 55].map((I) => I * multiplier);
-}```
+}
 
 ## Вопрос 2
 
