@@ -11,7 +11,7 @@ const Header = ({ handleFormat }) => {
             tile
         </button>
     </div>
-  )
+  );
 }
 
 export default Header;

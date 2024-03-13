@@ -14,7 +14,7 @@ const List = ({ user }) => {
         {user?.tel}
        </div>
       </div>
-    )
+    );
   }
   
   export default List;

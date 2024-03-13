@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
-import User from './components/User/User'
-import { dataUser } from './data/data'
+import Users from './components/Users/Users';
 function App() {
 
   const [format, setFormat] = useState('list');
@@ -11,16 +10,12 @@ function App() {
     setFormat(value);
   };
 
-  const users = `${format === 'list' ? 'list' : 'tile'} `;
-
   return (
     <div className="App">
       <Header handleFormat={handleFormat} />
-      <div className={users}>
-        {dataUser.map((user, index) => <User key={index} user={user} />)}
-      </div>
+      <Users format={format}/>
     </div>
-  )
+  );
 }
 
 export default App;

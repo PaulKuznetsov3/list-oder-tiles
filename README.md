@@ -1,8 +1,28 @@
-# React + Vite
+# Утмановка:
+- скачать проект, выполнить npm i;
+- запустить проект: npm run dev;
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Вопрос 1
+Чтобы избавиться от переменной that нужно использовать стрелочную функцию 
 
-Currently, two official plugins are available:
+function parent() {
+    const multiplier = 3;
+    return [33, 77, 99, 81, 55].map((I) => I * multiplier);
+}
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Вопрос 2
+
+Метод preventDefault() используется для отмены действия по умолчанию
+
+отменяется отправка формы при нажатии на кнопку
+
+const MyForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
